@@ -15,7 +15,7 @@ public class LoopActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loop);
-        //textView = (TextView) findViewById(R.id.splas_textview);
+        textView = (TextView) findViewById(R.id.loop);
         Task task = new Task(this);
         task.execute(0);
     }
@@ -23,10 +23,10 @@ public class LoopActivity extends AppCompatActivity {
 
 
     private class Task extends AsyncTask<Integer, Integer, Integer> {
-        private Activity activity;
+        private Activity act;
 
         public Task(Activity activity) {
-            this.activity = activity;
+            this.act = activity;
         }
 
         @Override
@@ -35,10 +35,10 @@ public class LoopActivity extends AppCompatActivity {
         }
 
         @Override
-        protected Integer doInBackground(Integer[] objects) {
+        protected Integer doInBackground(Integer[] values) {
 
             int i;
-            for (i = objects[0]; i < 100000; i++) {
+            for (i = values[0]; i < 100000; i++) {
                 publishProgress(i);
             }
             return i;
@@ -52,9 +52,9 @@ public class LoopActivity extends AppCompatActivity {
         }
 
         @Override
-        protected void onPostExecute(Integer o) {
-            super.onPostExecute(o);
-            textView.setText("Loops completed: " + o);
+        protected void onPostExecute(Integer integer) {
+            super.onPostExecute(integer);
+            textView.setText("Loops completed: " + integer);
 
             Intent intent = new Intent(LoopActivity.this, LoginActivity.class);
             startActivity(intent);
