@@ -1,0 +1,17 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="nyc.c4q.mustafizurmatin.midtermretake.MyNumberFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+    android:id="@+id/numbers_textview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="@string/hello_blank_fragment"/>
+
+
+</LinearLayout>
