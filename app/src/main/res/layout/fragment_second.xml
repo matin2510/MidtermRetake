@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="nyc.c4q.mustafizurmatin.midtermretake.MyNumberFragment">
+    tools:context="nyc.c4q.mustafizurmatin.midtermretake.FirstFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

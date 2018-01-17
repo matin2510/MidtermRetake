@@ -24,7 +24,7 @@ public class ItemViewHolder extends RecyclerView.ViewHolder {
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MyNumberFragment myNumberFragment = new MyNumberFragment();
+                FirstFragment myNumberFragment = new FirstFragment();
                 FragmentManager fragmentManager = ((ListActivity) itemView.getContext()).getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 Bundle bundle = new Bundle();

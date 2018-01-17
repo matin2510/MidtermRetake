@@ -16,7 +16,7 @@ public class ListActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String username = intent.getStringExtra("username");
 
-        MyListFragment listFragment = new MyListFragment();
+        SecondFragment listFragment = new SecondFragment();
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         Bundle bundle = new Bundle();

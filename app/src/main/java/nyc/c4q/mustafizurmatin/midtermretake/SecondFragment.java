@@ -16,11 +16,11 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MyListFragment extends Fragment {
+public class SecondFragment extends Fragment {
     private View rootView;
     private TextView textView;
 
-    public MyListFragment() {
+    public SecondFragment() {
         // Required empty public constructor
     }
 

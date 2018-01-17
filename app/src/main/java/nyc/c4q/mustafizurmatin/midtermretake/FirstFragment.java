@@ -8,12 +8,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-public class MyNumberFragment extends Fragment {
+public class FirstFragment extends Fragment {
 
 
     public View rootView;
 
-    public MyNumberFragment() {
+    public FirstFragment() {
         // Required empty public constructor
     }
 
