@@ -23,10 +23,9 @@ public class LoopActivity extends AppCompatActivity {
 
 
     private class Task extends AsyncTask<Integer, Integer, Integer> {
-        private Activity act;
-
+        private Activity activity;
         public Task(Activity activity) {
-            this.act = activity;
+            this.activity = activity;
         }
 
         @Override
